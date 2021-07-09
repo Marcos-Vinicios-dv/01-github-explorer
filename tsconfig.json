@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    // "lib" adiciona algumas funcionalidade, sendo uma delas a tipagem de de elementos
+    // html, elemento da DOM
+    "lib": ["dom", "dom.Iterable", "esnext"],
+    // "allowJs" permite que o app tenha tanto arquivos js quanto ts
+    "allowJs": true,
+    // diz que estamos utilizando jsx
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "strict": true,
+    "moduleResolution": "node",
+    // adiciona a possibilidade de importamos arquivos do tipo json
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  // o include é onde o código da nossa aplicação vai estar, então se tivessem
+  // mais arquivos fora da pasta src, seria necessário também especificar no include
+  "include": ["src"]
+}
+// É NECESSÁRIO AGORA CONFIGURAR O BABEL POIS ELE NÃO INTERPRETA POR PADRÃO
+// TS
